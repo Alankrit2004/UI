@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;400&display=swap");
+
+/* DISABLING SELECTION */
+.app {
+    /* DISABLE SELECTION */
+    /* -webkit-user-select: none; */
+    /* Safari */
+    /* -moz-user-select: none; */
+    /* Firefox */
+    /* -ms-user-select: none; */
+    /* Internet Explorer/Edge */
+    /* user-select: none; */
+    /* Standard */
+
+    /* DISABLE BLUE HIGHLIGHT WHEN CLICK [FOR MOBILE CHROME] */
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    /* -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+}
+
+.app:focus {
+    outline: none !important;
+}
+
+body {
+    font-family: "Mitr";
+    font-weight: 400;
+    background-color: white !important;
+    background: white;
+    overflow: hidden;
+}
+
+.app:focus {
+    outline: none;
+}
+
+/* CUSTOM STYLE */
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+.press-1:active {
+    scale: 0.99;
+}
+
+.press-2:active {
+    scale: 0.98;
+}
+
+.press-3:active {
+    scale: 0.97;
+}
+
+.press-4:active {
+    scale: 0.96;
+}
+
+.press-5:active {
+    scale: 0.95;
+}
+
+.custom-container {
+    padding-right: 32px;
+    padding-left: 32px;
+}
+
+@media screen and (min-width: 768px) {
+    .custom-container {
+        padding-right: 56px;
+        padding-left: 56px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .custom-container {
+        padding-right: 112px;
+        padding-left: 112px;
+    }
+}
+
+.bg-img {
+    background-image: url("../src/pages/assets/project-images/loginbg.png");
+    background-repeat: no-repeat;
+}
+
+.icon {
+    font-size: 1rem;
+    color: theme("colors.fourth");
+    display: inline-block;
+    width: 1.5rem;
+}
+
+.custom-shadow {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-shadow-1 {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.table-container {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+}
+
+.custom-table td:last-child {
+    border-right: none;
+}
+
+.custom-table td:last-child {
+    border-right: none;
+}
+.custom-table tr:last-child td {
+    border-bottom: none;
+}
+.custom-table {
+    /* border-radius: 7px; */
+    /* border: 1px solid transparent; */
+    border-collapse: collapse;
+    white-space: nowrap;
+}
+
+.custom-table .table-heading {
+    background-color: theme("colors.fifth");
+    /* color: white; */
+    font-weight: 600;
+    border-bottom: 1px solid gray;
+}
+
+.table-heading td {
+    color: #000;
+}
+
+.custom-table td {
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    height: 40px;
+    font-size: 14px;
+    color: #3d3d3d;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+}
+
+.custom-table td div {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-table td {
+    padding: 10px;
+}
+
+/*  */
+.table-sale-order {
+    white-space: nowrap;
+}
+
+.table-sale-order .head {
+    background-color: theme("colors.fifth");
+    font-weight: 600;
+    color: #000 !important;
+}
+
+.table-sale-order td {
+    padding: 5px 10px;
+    border: 1px solid rgba(61, 61, 61, 1);
+    color: #3d3d3d;
+}
+
+.minbox {
+    background: #e8ecf3;
+    box-shadow: 0px 0px 2px 0px #00000040;
+
+    padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+}
+
+
+
+.bigbtn {
+    border: 1px solid #3d3d3d33;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    background: linear-gradient(0deg, #1285f7, #1285f7),
+        linear-gradient(0deg, rgba(61, 61, 61, 0.2), rgba(61, 61, 61, 0.2));
+}
+
+input[type="file"] {
+    /* Change the text of the button */
+    label {
+        font-size: 1rem;
+        content: "Attachment";
+    }
+}
+
+input[type="file"]::file-selector-button {
+    background-color: #1c4584;
+    color: #ffffff;
+    cursor: pointer;
+
+    border-radius: 5px;
+}
+
+.custom-grid {
+    @apply grid grid-cols-1 gap-4 md:grid-cols-2 gap-x-8 gap-y-3 p-5 max-h-[70vh] overflow-y-auto;
+}
+
+input:focus {
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Firefox */
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #f1f1f1 #fff;
+}
+
+.scrollbar:hover {
+    scrollbar-color: #555 #fff;
+}
